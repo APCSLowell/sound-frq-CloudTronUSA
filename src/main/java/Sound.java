@@ -40,7 +40,7 @@ public class Sound
   {
     int fNZI = 0;
     while (fNZI < samples.length && samples[fNZI] == 0)
-        firstNonZeroIndex++;
+        fNZI++;
 
     int newLength = samples.length - fNZI;
     int[] newSamples = new int[newLength];
